@@ -19,7 +19,7 @@ from googlesearch import search
 res = ''
 with st.spinner('Wait for it...'): 
     for j in search(review, tld="co.in", num=10, stop=10, pause=2):
-        res = res + j
+        res = res + j + '\n'
     
 if review.strip() == '':
     st.warning('Review is empty')
