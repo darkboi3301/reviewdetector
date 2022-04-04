@@ -17,7 +17,7 @@ from googlesearch import search
  
 # to search
 res = ''
-with st.spinner('STFU and wait idiot.....'): 
+with st.spinner('Hold on.... \U0001f600'): 
     for j in search(review, tld="co.in", num=10, stop=10, pause=2):
         res = res + j + '\n'
     
