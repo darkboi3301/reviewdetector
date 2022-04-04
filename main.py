@@ -19,7 +19,6 @@ from googlesearch import search
 res = ''
 with st.spinner('Wait for it...'): 
     for j in search(review, tld="co.in", num=10, stop=10, pause=2):
-        res = ''
         res = res + j
 
 if review.strip() == '':
