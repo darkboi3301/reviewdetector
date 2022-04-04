@@ -32,7 +32,10 @@ res = ''
 for j in search(review, tld="co.in", num=10, stop=10, pause=2):
     res = ''
     res = res + j
-if res == '':
+
+if review =='':
+    st.subheader('Review is empty')
+elif res == '':
     st.subheader('This review is NOT FAKE')
 else:
     st.subheader('this review  is Potentially fake and has been found in the following websites')
